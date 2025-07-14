@@ -166,7 +166,7 @@ export class TransactionsService {
     const paymentConfirmed = transactionStatus === PAYSTACK_SUCCESS_STATUS;
 
     if (paymentConfirmed) {
-      transaction.status = PaymentStatus.pain;
+      transaction.status = PaymentStatus.paid;
     } else {
       transaction.status = PaymentStatus.notPaid;
     }
@@ -219,7 +219,7 @@ export class TransactionsService {
     const paymentConfirmed = transactionStatus === PAYSTACK_SUCCESS_STATUS;
 
     if (paymentConfirmed) {
-      transaction.status = PaymentStatus.pain;
+      transaction.status = PaymentStatus.paid;
     } else {
       transaction.status = PaymentStatus.notPaid;
     }

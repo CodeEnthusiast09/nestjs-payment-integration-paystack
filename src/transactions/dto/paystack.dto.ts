@@ -66,6 +66,6 @@ export class PaystackCallbackDto {
 }
 
 export enum PaymentStatus {
-  pain = 'paid',
+  paid = 'paid',
   notPaid = 'not paid',
 }
